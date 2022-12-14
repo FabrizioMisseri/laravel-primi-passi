@@ -27,9 +27,7 @@
         <ul style="list-style: none; text-align: center;">
             @foreach ($navbar as $link)
                 <li style="display: inline-block; margin-right: 1.5rem;">
-                    <a href=" {{ route(<?php $string = "$link";
-                    echo $string; ?>) }} "
-                        style="text-decoration: none; color: inherit; font-size: 2rem;">
+                    <a href=" {{ route("$link") }} " style="text-decoration: none; color: inherit; font-size: 2rem;">
                         {{ $link }}
                     </a>
                 </li>
